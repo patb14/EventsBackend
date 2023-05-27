@@ -1,0 +1,46 @@
+networks:
+  default:
+      name: DockerGraphQL
+
+volumes:
+  dbVol:
+  web-django:
+  web-static:
+
+services:
+  web:
+    restart: always
+    build: ./services
+    expose:
+      - "8000"
+    links:
+      - db:db
+    volumes:
+      - web-django:/usr/src/app
+      - web-static:/usr/src/app/static
+    environment:
+      DEBUG: 'true'
+    command: /usr/local/bin/gunicorn services.wsgi:application -w 2 -b :8000
+
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - dbVol:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: myUser
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: myDB
+
+  nginx:
+    restart: always
+    build: ./nginx/
+    ports:
+      - "80:80"
+    volumes:
+      - web-static:/www/static
+    links:
+      - web:web
