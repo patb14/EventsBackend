@@ -1,0 +1,10 @@
+{% if event %}
+    <b><h1>{{ event.name }}</h1></b>
+    <li>Location: {{ event.location }}</li>
+    <li>Start Date: {{ event.start_date }}</li>
+    <li>End Date: {{ event.end_date }}</li>
+    <li>Times: {{ event.times }}</li>
+    <li>Cost: {{ event.cost }}</li>
+{% else %}
+<p>Event Does Not Exist</p>
+{% endif %}

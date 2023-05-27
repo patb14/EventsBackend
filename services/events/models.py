@@ -12,6 +12,25 @@ GENDER_CHOICES = [
     ("C", "Co-ed")
 ]
 
+YOB_CHOICE = [
+    ("2010", "2010"),
+    ("2011", "2011"),
+    ("2012", "2012"),
+    ("2013", "2013"),
+]
+
+LOP_CHOICES = [
+    ("AAA", "AAA"),
+    ("AA", "AA"),
+    ("A", "A"),
+]
+
+POSITION_CHOICES = [
+    ("FORWARD", "Forward"),
+    ("DEFENSE", "Defense"),
+    ("GOALIE", "Goalie")
+]
+
 
 class Event(models.Model):
     name = models.CharField(max_length=256)
