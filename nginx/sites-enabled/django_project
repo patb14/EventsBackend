@@ -1,10 +1,14 @@
 server {
-
     listen 80;
-    server_name example.org;
+    server_name localhost;
     charset utf-8;
 
+     add_header Access-Control-Allow-Headers *;
+     add_header Access-Control-Allow-Methods *;
+     add_header Access-Control-Allow-Origin *;
+
     location /static {
+        autoindex on;
         alias /usr/src/app/static;
     }
 

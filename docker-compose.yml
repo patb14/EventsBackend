@@ -4,8 +4,7 @@ networks:
 
 volumes:
   dbVol:
-  web-django:
-  web-static:
+    driver: local
 
 services:
   web:
@@ -16,8 +15,8 @@ services:
     links:
       - db:db
     volumes:
-      - web-django:/usr/src/app
-      - web-static:/usr/src/app/static
+      - ./services:/usr/src/app
+      - ./services/static:/usr/src/app/static
     environment:
       DEBUG: 'true'
     command: /usr/local/bin/gunicorn services.wsgi:application -w 2 -b :8000
@@ -41,6 +40,6 @@ services:
     ports:
       - "80:80"
     volumes:
-      - web-static:/www/static
+      - ./services/static:/usr/src/app/static
     links:
       - web:web
