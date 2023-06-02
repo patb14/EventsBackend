@@ -1,0 +1,6 @@
+FROM nginx:stable
+
+RUN rm -rf /etc/nginx/conf.d/*
+
+# nginx config
+COPY proxy_dev.conf /etc/nginx/conf.d/

@@ -38,7 +38,9 @@ services:
 
   nginx:
     restart: always
-    build: ./nginx/
+    build:
+      context: ./nginx/
+      dockerfile: dockerfile_nginx_dev
     ports:
       - "80:80"
     volumes:
