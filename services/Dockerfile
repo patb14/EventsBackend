@@ -9,9 +9,14 @@ ENV PYTHONUNBUFFERED 1
 # Set the python path so docker can see the modules
 ENV PYTHONPATH "${PYTHONPATH}:/services"
 
-COPY requirements.txt requirements.txt
-RUN python -m pip install -r requirements.txt
+# Install the requirements
+WORKDIR /services
+COPY requirements.txt /services/
+RUN pip install -r requirements.txt
 
-COPY . .
+COPY . /services/
 
+# Copy the project entrypoint
+WORKDIR /services
+COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

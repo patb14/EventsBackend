@@ -10,6 +10,7 @@ services:
   web:
     restart: always
     build: ./services
+    working_dir: /services
     depends_on:
       - db
     expose:
@@ -19,9 +20,10 @@ services:
     volumes:
       - ./services:/usr/src/app
       - ./services/static:/usr/src/app/static
+      - ./services:/services
     environment:
       DEBUG: 'true'
-    command: /usr/local/bin/gunicorn services.wsgi:application -w 2 -b :8000
+    command: python manage.py runserver 0.0.0.0:8000 #/usr/local/bin/gunicorn services.wsgi:application -w 2 -b :8000 --reload
 
   db:
     image: postgres
