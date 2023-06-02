@@ -10,6 +10,8 @@ services:
   web:
     restart: always
     build: ./services
+    depends_on:
+      - db
     expose:
       - "8000"
     links:
