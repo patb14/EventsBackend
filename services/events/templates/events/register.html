@@ -1,24 +1,25 @@
-<form method="get" id="registerForm" data-times-url="{% url 'events:ajax_load_times' %}">
+<form method="get" id="registerForm" data-sessions-url="{% url 'events:ajax_load_sessions' %}">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
     $("#id_camp_selection").change(function () {
-        var url = $("#registerForm").attr("data-times-url");
+        var url = $("#registerForm").attr("data-sessions-url");
         var eventId = $(this).val();
 
-        $.ajax({
-            url: url,
-            data: {
-                'event': eventId
-            },
-            success: function (data) {
-                $("#id_time_slot").html(data);
-            }
-        });
-
+        if (eventId) {
+            $.ajax({
+                url: url,
+                data: {
+                    'event': eventId
+                },
+                success: function (data) {
+                    $("#id_time_slot").html(data);
+                }
+            });
+        }
     });
 </script>

@@ -1,6 +1,6 @@
 from django import forms
 
-from events.models import EventTime
+from events.models import Session
 from events.models.event_model import Event
 from events.models.gender_model import Gender
 from events.models.level_of_play_model import LevelOfPlay
@@ -17,9 +17,10 @@ YOB_CHOICE = [
 
 class RegisterForm(forms.Form):
     camp_selection = forms.ModelChoiceField(queryset=Event.objects.all())
-    time_slot = forms.ModelChoiceField(queryset=EventTime.objects.none())
+    time_slot = forms.ModelChoiceField(queryset=Session.objects.none())
     player_name = forms.CharField()
     player_gender = forms.ModelChoiceField(queryset=Gender.objects.all().exclude(gender="Co-ed"))
     player_year_of_birth = forms.ChoiceField(choices=YOB_CHOICE)
     level_of_play = forms.ModelChoiceField(queryset=LevelOfPlay.objects.order_by("id"))
     position = forms.ModelChoiceField(queryset=PlayerPosition.objects.all())
+

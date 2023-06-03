@@ -7,10 +7,7 @@ class Event(models.Model):
     end_date = models.DateField()
     location = models.ForeignKey("EventLocation", on_delete=models.DO_NOTHING)
     gender = models.ForeignKey("Gender", on_delete=models.DO_NOTHING)
-    # TODO: This will have to change to One to Many since event times will have an occupancy limit
-    #       Probably smart to just make a Session model. An Event can have multiple sessions and those sessions can only
-    #       be associated with this event. A session has an occupancy limit, time range, etc. In short times -> sessions
-    times = models.ManyToManyField("EventTime")
+    sessions = models.ManyToManyField("Session")
     cost = models.FloatField()
 
     created_timestamp = models.DateTimeField(auto_now_add=True)

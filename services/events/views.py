@@ -27,7 +27,7 @@ class RegisterView(generic.FormView):
         return super(RegisterView, self).form_valid(form)
 
 
-def event_times_view(request):
+def event_sessions_view(request):
     event_id = request.GET.get("event")
     event = Event.objects.get(id=event_id)
-    return render(request, "events/event_time_dropdown_list_options.html", {"times": event.times.all()})
+    return render(request, "events/event_time_dropdown_list_options.html", {"times": event.sessions.all()})
