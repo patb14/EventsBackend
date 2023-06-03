@@ -13,3 +13,6 @@ class Session(models.Model):
 
     def __str__(self):
         return self.name
+
+    def public_label(self):
+        return self.start_time

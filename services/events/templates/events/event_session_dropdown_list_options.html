@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for session in sessions %}
+    <option value="{{ session.pk }}">{{ session.start_time }} - {{ session.end_time }}</option>
+{% endfor %}

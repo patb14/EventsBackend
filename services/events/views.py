@@ -30,4 +30,4 @@ class RegisterView(generic.FormView):
 def event_sessions_view(request):
     event_id = request.GET.get("event")
     event = Event.objects.get(id=event_id)
-    return render(request, "events/event_time_dropdown_list_options.html", {"times": event.sessions.all()})
+    return render(request, "events/event_session_dropdown_list_options.html", {"sessions": event.sessions.all()})

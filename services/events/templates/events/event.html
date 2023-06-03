@@ -3,7 +3,7 @@
     <li>Location: {{ event.location }}</li>
     <li>Start Date: {{ event.start_date }}</li>
     <li>End Date: {{ event.end_date }}</li>
-    <li>Times: {{ event.times }}</li>
+    <li>Sessions: {{ event.sessions.all }}</li>
     <li>Cost: {{ event.cost }}</li>
 {% else %}
 <p>Event Does Not Exist</p>
