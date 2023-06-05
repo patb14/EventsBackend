@@ -1,0 +1,23 @@
+[
+{
+    "model": "events.playerposition",
+    "pk": 1,
+    "fields": {
+        "position": "Forward"
+    }
+},
+{
+    "model": "events.playerposition",
+    "pk": 2,
+    "fields": {
+        "position": "Defense"
+    }
+},
+{
+    "model": "events.playerposition",
+    "pk": 3,
+    "fields": {
+        "position": "Goalie"
+    }
+}
+]

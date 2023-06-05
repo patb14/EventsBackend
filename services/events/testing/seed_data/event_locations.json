@@ -1,0 +1,22 @@
+[
+{
+    "model": "events.eventlocation",
+    "pk": 1,
+    "fields": {
+        "name": "KRC",
+        "address": "123, Fake Street",
+        "created_timestamp": "2023-06-03T00:33:37.941Z",
+        "last_updated_timestamp": "2023-06-03T00:33:37.941Z"
+    }
+},
+{
+    "model": "events.eventlocation",
+    "pk": 2,
+    "fields": {
+        "name": "Cardel Recreation Complex",
+        "address": "123 Another Street",
+        "created_timestamp": "2023-06-03T01:15:40.645Z",
+        "last_updated_timestamp": "2023-06-03T01:15:40.645Z"
+    }
+}
+]

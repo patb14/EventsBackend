@@ -1,0 +1,23 @@
+[
+{
+    "model": "events.gender",
+    "pk": 1,
+    "fields": {
+        "gender": "Co-ed"
+    }
+},
+{
+    "model": "events.gender",
+    "pk": 2,
+    "fields": {
+        "gender": "Male"
+    }
+},
+{
+    "model": "events.gender",
+    "pk": 3,
+    "fields": {
+        "gender": "Female"
+    }
+}
+]

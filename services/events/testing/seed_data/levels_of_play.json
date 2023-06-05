@@ -1,0 +1,72 @@
+[
+{
+    "model": "events.levelofplay",
+    "pk": 1,
+    "fields": {
+        "level_of_play": "AAA"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 2,
+    "fields": {
+        "level_of_play": "AA"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 3,
+    "fields": {
+        "level_of_play": "A"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 4,
+    "fields": {
+        "level_of_play": "BB"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 5,
+    "fields": {
+        "level_of_play": "B"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 6,
+    "fields": {
+        "level_of_play": "Rep B"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 7,
+    "fields": {
+        "level_of_play": "House A"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 8,
+    "fields": {
+        "level_of_play": "House B"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 9,
+    "fields": {
+        "level_of_play": "Community/House"
+    }
+},
+{
+    "model": "events.levelofplay",
+    "pk": 10,
+    "fields": {
+        "level_of_play": "Junior"
+    }
+}
+]
