@@ -1,6 +1,6 @@
 networks:
   default:
-      name: DockerGraphQL
+    name: DockerGraphQL
 
 volumes:
   dbVol:
@@ -23,6 +23,9 @@ services:
       - ./services:/services
     environment:
       DEBUG: 'true'
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL}
     command: python manage.py runserver 0.0.0.0:8000 #/usr/local/bin/gunicorn services.wsgi:application -w 2 -b :8000
 
   db:

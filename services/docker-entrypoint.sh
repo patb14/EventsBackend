@@ -10,10 +10,6 @@ python manage.py migrate
 
 # Create Super User
 echo "Creating Super User"
-# TODO: LOL
-DJANGO_SUPERUSER_USERNAME=admin \
-DJANGO_SUPERUSER_PASSWORD=password \
-DJANGO_SUPERUSER_EMAIL="admin@admin.com" \
 python manage.py createsuperuser --noinput
 
 # TODO
