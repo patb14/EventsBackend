@@ -8,7 +8,7 @@ from events.models import Gender
 class GenderType(DjangoObjectType):
     class Meta:
         model = Gender
-        filter_fields = ['gender']
+        filter_fields = ["gender"]
         fields = ("id", "gender")
         interfaces = (graphene.relay.Node,)
 

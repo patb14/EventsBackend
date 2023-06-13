@@ -8,14 +8,14 @@ from events.models import EventLocation
 class EventLocationType(DjangoObjectType):
     class Meta:
         model = EventLocation
-        filter_fields = ['name']
-        fields = ("id", "name", "address ")
+        filter_fields = ["name", "address"]
+        fields = ("id", "name", "address")
         interfaces = (graphene.relay.Node,)
 
 
 class Query(graphene.ObjectType):
-    event = graphene.relay.Node.Field(EventLocationType)
-    all_events = DjangoFilterConnectionField(EventLocationType)
+    event_location = graphene.relay.Node.Field(EventLocationType)
+    all_event_locations = DjangoFilterConnectionField(EventLocationType)
 
 
 schema = graphene.Schema(query=Query)

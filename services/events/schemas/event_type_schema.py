@@ -8,7 +8,7 @@ from events.models import Event
 class EventType(DjangoObjectType):
     class Meta:
         model = Event
-        filter_fields = ['name', 'location']
+        filter_fields = ["name", "start_date", "end_date", "location", "gender", "sessions", "cost"]
         fields = ("id", "name", "start_date", "end_date", "location", "gender", "sessions", "cost")
         interfaces = (graphene.relay.Node,)
 
