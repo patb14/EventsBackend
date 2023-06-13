@@ -12,14 +12,13 @@ python manage.py migrate
 echo "Creating Super User"
 python manage.py createsuperuser --noinput
 
-# TODO
-#echo "DB Seed"
-#python manage.py loaddata ./events/testing/seed_data/event_locations.json
-#python manage.py loaddata ./events/testing/seed_data/genders.json
-#python manage.py loaddata ./events/testing/seed_data/levels_of_play.json
-#python manage.py loaddata ./events/testing/seed_data/player_positions.json
-#python manage.py loaddata ./events/testing/seed_data/sessions.json
-#python manage.py loaddata ./events/testing/seed_data/events.json
+echo "DB Seed"
+python manage.py loaddata ./events/testing/seed_data/event_locations.json
+python manage.py loaddata ./events/testing/seed_data/genders.json
+python manage.py loaddata ./events/testing/seed_data/levels_of_play.json
+python manage.py loaddata ./events/testing/seed_data/player_positions.json
+python manage.py loaddata ./events/testing/seed_data/sessions.json
+python manage.py loaddata ./events/testing/seed_data/events.json
 
 
 # Start server
