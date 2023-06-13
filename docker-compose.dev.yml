@@ -37,9 +37,9 @@ services:
     volumes:
       - dbVol:/var/lib/postgresql/data/
     environment:
-      POSTGRES_USER: myUser
-      POSTGRES_PASSWORD: secret
-      POSTGRES_DB: myDB
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
 
   nginx:
     restart: always
