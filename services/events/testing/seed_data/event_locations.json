@@ -1,22 +1,22 @@
 [
-{
+  {
     "model": "events.eventlocation",
-    "pk": 1,
+    "pk": "6d1b3627-11d8-49aa-8c10-cc0f593f0c73",
     "fields": {
-        "name": "KRC",
-        "address": "123, Fake Street",
-        "created_timestamp": "2023-06-03T00:33:37.941Z",
-        "last_updated_timestamp": "2023-06-03T00:33:37.941Z"
+      "created_timestamp": "2023-06-03T01:15:40.645Z",
+      "last_updated_timestamp": "2023-06-03T01:15:40.645Z",
+      "name": "Cardel Recreation Complex",
+      "address": "123 Another Street"
     }
-},
-{
+  },
+  {
     "model": "events.eventlocation",
-    "pk": 2,
+    "pk": "c609fbb9-8c8d-4579-91b7-2f0b05978fc5",
     "fields": {
-        "name": "Cardel Recreation Complex",
-        "address": "123 Another Street",
-        "created_timestamp": "2023-06-03T01:15:40.645Z",
-        "last_updated_timestamp": "2023-06-03T01:15:40.645Z"
+      "created_timestamp": "2023-06-03T00:33:37.941Z",
+      "last_updated_timestamp": "2023-06-03T00:33:37.941Z",
+      "name": "KRC",
+      "address": "123, Fake Street"
     }
-}
+  }
 ]

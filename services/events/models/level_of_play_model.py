@@ -1,7 +1,9 @@
 from django.db import models
 
+from events.models.base_model import BaseModel
 
-class LevelOfPlay(models.Model):
+
+class LevelOfPlay(BaseModel):
     level_of_play = models.CharField(max_length=32)
 
     def __str__(self):

@@ -1,23 +1,29 @@
 [
-{
+  {
     "model": "events.playerposition",
-    "pk": 1,
+    "pk": "187aecd7-74ae-44cf-8969-9213db1628c3",
     "fields": {
-        "position": "Forward"
+      "created_timestamp": "2023-06-03T02:02:47.631Z",
+      "last_updated_timestamp": "2023-06-03T02:02:47.631Z",
+      "position": "Goalie"
     }
-},
-{
+  },
+  {
     "model": "events.playerposition",
-    "pk": 2,
+    "pk": "68a6e63f-c615-479c-8388-9afc6431a6e6",
     "fields": {
-        "position": "Defense"
+      "created_timestamp": "2023-06-03T02:02:47.631Z",
+      "last_updated_timestamp": "2023-06-03T02:02:47.631Z",
+      "position": "Defense"
     }
-},
-{
+  },
+  {
     "model": "events.playerposition",
-    "pk": 3,
+    "pk": "9e7e7207-26d5-4055-8416-790bfd623b5a",
     "fields": {
-        "position": "Goalie"
+      "created_timestamp": "2023-06-03T02:02:47.631Z",
+      "last_updated_timestamp": "2023-06-03T02:02:47.631Z",
+      "position": "Forward"
     }
-}
+  }
 ]

@@ -1,65 +1,37 @@
 [
-{
+  {
     "model": "events.event",
-    "pk": 1,
+    "pk": "0e25b475-ba8e-48c1-8a0a-598097c279a5",
     "fields": {
-        "name": "WEEKLY SUMMER CAMP - JUL 3 - 7",
-        "start_date": "2023-07-03",
-        "end_date": "2023-07-07",
-        "location": 1,
-        "gender": 1,
-        "cost": 399.0,
-        "created_timestamp": "2023-06-03T00:34:17.759Z",
-        "last_updated_timestamp": "2023-06-03T02:40:12.103Z",
-        "sessions": [
-            2,
-            5
-        ]
+      "created_timestamp": "2023-06-13T01:16:35.122Z",
+      "last_updated_timestamp": "2023-06-13T01:16:35.122Z",
+      "name": "WEEKLY SUMMER CAMP - JUL 3 - 7",
+      "start_date": "2023-07-03",
+      "end_date": "2023-07-07",
+      "location": "c609fbb9-8c8d-4579-91b7-2f0b05978fc5",
+      "gender": "3dc78310-9dbb-4206-a645-9ed015e76007",
+      "cost": 399.0,
+      "sessions": [
+        "7178ecc3-643f-4696-b240-0997cbba39c8",
+        "3c0be0dd-1f05-45db-88fd-ec620e4e9d51"
+      ]
     }
-},
-{
+  },
+  {
     "model": "events.event",
-    "pk": 2,
+    "pk": "40ece94a-5775-4759-b702-7151ec8ab125",
     "fields": {
-        "name": "WEEKLY SUMMER CAMP -JUL 10 - 14",
-        "start_date": "2023-07-10",
-        "end_date": "2023-07-14",
-        "location": 1,
-        "gender": 1,
-        "cost": 299.0,
-        "created_timestamp": "2023-06-03T01:12:08.391Z",
-        "last_updated_timestamp": "2023-06-03T01:12:08.391Z",
-        "sessions": []
+      "created_timestamp": "2023-06-13T01:17:11.888Z",
+      "last_updated_timestamp": "2023-06-13T01:17:11.888Z",
+      "name": "WEEKLY SUMMER CAMP -JUL 10 - 14",
+      "start_date": "2023-07-10",
+      "end_date": "2023-07-14",
+      "location": "c609fbb9-8c8d-4579-91b7-2f0b05978fc5",
+      "gender": "3dc78310-9dbb-4206-a645-9ed015e76007",
+      "cost": 399.0,
+      "sessions": [
+        "6b60676c-e058-478b-8ebf-0cde71aa9aca"
+      ]
     }
-},
-{
-    "model": "events.event",
-    "pk": 3,
-    "fields": {
-        "name": "WEEKLY SUMMER CAMP - JUL 31-  AUG 4",
-        "start_date": "2023-08-31",
-        "end_date": "2023-08-04",
-        "location": 1,
-        "gender": 1,
-        "cost": 299.0,
-        "created_timestamp": "2023-06-03T01:14:57.352Z",
-        "last_updated_timestamp": "2023-06-03T01:14:57.352Z",
-        "sessions": []
-    }
-},
-{
-    "model": "events.event",
-    "pk": 4,
-    "fields": {
-        "name": "WEEKLY SUMMER CAMP - AUG 8 - 11",
-        "start_date": "2023-08-08",
-        "end_date": "2023-08-11",
-        "location": 2,
-        "gender": 1,
-        "cost": 249.0,
-        "created_timestamp": "2023-06-03T01:16:24.208Z",
-        "last_updated_timestamp": "2023-06-03T01:16:24.208Z",
-        "sessions": []
-    }
-}
+  }
 ]

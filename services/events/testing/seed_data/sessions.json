@@ -1,41 +1,41 @@
 [
-{
+  {
     "model": "events.session",
-    "pk": 2,
+    "pk": "3c0be0dd-1f05-45db-88fd-ec620e4e9d51",
     "fields": {
-        "name": "July 3-7 11:15am",
-        "start_time": "11:15:00",
-        "end_time": "13:15:00",
-        "occupancy_limit": 20,
-        "current_occupancy": 0,
-        "created_timestamp": "2023-06-03T01:43:44.352Z",
-        "last_updated_timestamp": "2023-06-03T02:03:40.128Z"
+      "created_timestamp": "2023-06-03T01:43:44.352Z",
+      "last_updated_timestamp": "2023-06-03T02:03:40.128Z",
+      "name": "July 3-7 11:15am",
+      "start_time": "11:15:00",
+      "end_time": "13:15:00",
+      "occupancy_limit": 20,
+      "current_occupancy": 0
     }
-},
-{
+  },
+  {
     "model": "events.session",
-    "pk": 4,
+    "pk": "6b60676c-e058-478b-8ebf-0cde71aa9aca",
     "fields": {
-        "name": "July 10-14 9am",
-        "start_time": "09:00:00",
-        "end_time": "11:00:00",
-        "occupancy_limit": 25,
-        "current_occupancy": 0,
-        "created_timestamp": "2023-06-03T02:02:47.631Z",
-        "last_updated_timestamp": "2023-06-03T02:02:47.631Z"
+      "created_timestamp": "2023-06-03T02:02:47.631Z",
+      "last_updated_timestamp": "2023-06-03T02:02:47.631Z",
+      "name": "July 10-14 9am",
+      "start_time": "09:00:00",
+      "end_time": "11:00:00",
+      "occupancy_limit": 25,
+      "current_occupancy": 0
     }
-},
-{
+  },
+  {
     "model": "events.session",
-    "pk": 5,
+    "pk": "7178ecc3-643f-4696-b240-0997cbba39c8",
     "fields": {
-        "name": "July 3-7 1:15pm",
-        "start_time": "13:15:00",
-        "end_time": "15:15:00",
-        "occupancy_limit": 100,
-        "current_occupancy": 0,
-        "created_timestamp": "2023-06-03T02:40:09.880Z",
-        "last_updated_timestamp": "2023-06-03T02:40:09.880Z"
+      "created_timestamp": "2023-06-03T02:40:09.880Z",
+      "last_updated_timestamp": "2023-06-03T02:40:09.880Z",
+      "name": "July 3-7 1:15pm",
+      "start_time": "13:15:00",
+      "end_time": "15:15:00",
+      "occupancy_limit": 100,
+      "current_occupancy": 0
     }
-}
+  }
 ]
